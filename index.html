@@ -7,37 +7,54 @@
     <title>Calculadoras</title>
   </head>
   <body>
-    <main>
-      <h1>Calculadora das Quatro Operações Fundamentais</h1>
-      <form action="">
-        <input type="text" name="resultado" id="resultado" />
-        <table>
-          <tr>
-            <input type="button" value="+" id="adicao" />
-            <input type="button" value="-" id="subtracao" />
-            <input type="button" value="x" id="multiplicacao" />
-            <input type="button" value="/" id="divisao" />
-          </tr>
-          <tr>
-            <input type="button" value="1" id="um" />
-            <input type="button" value="2" id="dois" />
-            <input type="button" value="3" id="tres" />
-          </tr>
-          <br />
-          <tr>
-            <input type="button" value="4" id="quatro" />
-            <input type="button" value="5" id="cinco" />
-            <input type="button" value="6" id="seis" />
-          </tr>
-          <br />
-          <tr>
-            <input type="button" value="7" id="sete" />
-            <input type="button" value="8" id="oito" />
-            <input type="button" value="9" id="nove" />
-            <input type="button" value="0" id="zero" />
-          </tr>
+    <main id="principal">
+      <div id="calculadoraOF">
+        <table class="calculadora">
+          <h1>Calculadora 4 Operações Principais</h1>
+          <thead>
+            <p id="resultado">resultado</p>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="button" value="+" id="adi" class="botao" /></td>
+              <td><input type="button" value="-" id="sub" class="botao" /></td>
+              <td>
+                <input type="button" value="x" id="multi" class="botao" />
+              </td>
+              <td><input type="button" value="/" id="divi" class="botao" /></td>
+              <td rowspan="4">
+                <input type="button" value="=" id="igual" class="botao" />
+              </td>
+            </tr>
+            <tr>
+              <td><input type="button" value="1" id="um" class="botao" /></td>
+              <td><input type="button" value="2" id="dois" class="botao" /></td>
+              <td><input type="button" value="3" id="tres" class="botao" /></td>
+              <td>
+                <input type="button" value="4" id="quatro" class="botao" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" value="5" id="cinco" class="botao" />
+              </td>
+              <td><input type="button" value="6" id="seis" class="botao" /></td>
+              <td><input type="button" value="7" id="sete" class="botao" /></td>
+              <td><input type="button" value="8" id="oito" class="botao" /></td>
+            </tr>
+            <tr>
+              <td><input type="button" value="9" id="nove" class="botao" /></td>
+              <td><input type="button" value="0" id="zero" class="botao" /></td>
+              <td>
+                <input type="button" value="<=" id="apagar" class="botao" />
+              </td>
+              <td>
+                <input type="button" value="C" id="clear" class="botao" />
+              </td>
+            </tr>
+          </tbody>
         </table>
-      </form>
+      </div>
     </main>
   </body>
 </html>
